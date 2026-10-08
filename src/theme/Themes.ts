@@ -1,85 +1,141 @@
-import { ITheme } from "./themeTypes";
+import { ITheme } from './ThemeTypes';
 
 export const LightTheme: ITheme = {
-        name: "light",
-        dark: false,
-        colors: {
-                primary: "#10CEB3",
-                primaryBackground: "#10CEB333",
-                background: "#F8FAFC",
-                card: "#FFFFFF",
-                border: "#E2E8F0",
-                textPrimary: "#0F172A",
-                textSecondary: "#64748B",
-                placeholder: "#94A3B8",
-                lightBackground: 'rgba(0,255,200,0.08)',
-                textViewBorder: "#195352",
-                secondary: "#F1F5F9",
-                secondaryText: "#0F172A",
-                secondaryBackground: '#F2F8FA',
-                success: "#22C55E",
-                warning: "#F59E0B",
-                error: "#EF4444",
-                info: "#06B6D4",
-                white: "#FFFFFF",
-                black: "#000000",
-                grey: "#808080",
-                grayLight: "#D3D3D3",
-                grayDark: "#A9A9A9",
-                interestSelectorBg: '#9ce8db',
-                cancel: '#FB7185',
-                cancelBackground: '#FB718533',
-                chatIcon: '#18263D',
-                hotelIcon: '#FBBF23',
-                hotelIconBackground: '#FBBF2333',
-                danger: '#FF3E76',
-                dangerBackground: '#FF3E7633',
-                star:'#FDBA12',
-        },
+    name: 'light',
+    dark: false,
+    colors: {
+        // Core Base Colors
+        background: '#F8FAFC',
+        secondaryBackground: '#FFFFFF',
+        primaryText: '#0F172A',
+        secondaryText: '#64748B',
+        borderColor: 'rgba(0, 0, 0, 0.08)',
+        blue: '#1877F2',
+
+        // Neon & Accent Colors
+        neonCyan: '#0284C7',
+        neonSky: '#0EA5E9',
+        neonIndigo: '#6366F1',
+        neonPurple: '#7C3AED',
+        neonFuchsia: '#C026D3',
+        neonPink: '#DB2777',
+        neonLavender: '#8B5CF6',
+
+        // Ambient Atmosphere Glows
+        glowTopPurple: 'rgba(124, 58, 237, 0.09)',
+        glowCenterCyan: 'rgba(14, 165, 233, 0.07)',
+        glowBottomPink: 'rgba(219, 39, 119, 0.07)',
+        glowCenterAura: 'rgba(139, 92, 246, 0.05)',
+
+        // Badge Colors
+        badgeBackground: 'rgba(124, 58, 237, 0.10)',
+        badgeBorder: 'rgba(124, 58, 237, 0.28)',
+        badgeText: '#7C3AED',
+
+        // Glassmorphism Card/Pill Colors
+        glassCardBackground: 'rgba(255, 255, 255, 0.85)',
+        glassCardBorder: 'rgba(0, 0, 0, 0.06)',
+        glassCardBorderHighlight: 'rgba(255, 255, 255, 0.95)',
+        pillNativeText: '#94A3B8',
+        pillCodeBadgeBackground: 'rgba(0, 0, 0, 0.04)',
+        pillCodeText: '#64748B',
+
+        // Active Card State Colors
+        activeCardCutout: '#FAF5FF',
+        activeCardGlow: '#7C3AED',
+        activeBadgeBackground: 'rgba(124, 58, 237, 0.14)',
+        activeBadgeBorder: 'rgba(219, 39, 119, 0.35)',
+        activeBadgeDot: '#0284C7',
+        activeBadgeText: '#DB2777',
+
+        // Search Bar Colors
+        searchBackground: 'rgba(255, 255, 255, 0.90)',
+        searchBorder: 'rgba(0, 0, 0, 0.08)',
+        searchBorderHighlight: 'rgba(255, 255, 255, 1.0)',
+        searchPlaceholder: 'rgba(100, 116, 139, 0.70)',
+        searchIconColor: '#64748B',
+        searchClearBackground: 'rgba(0, 0, 0, 0.08)',
+        searchClearText: '#0F172A',
+
+        // CTA Button Colors
+        ctaButtonBackground: '#7C3AED',
+        ctaGlowColor: '#DB2777',
+        ctaTextColor: '#FFFFFF',
+        ctaArrowCircleBackground: 'rgba(255, 255, 255, 0.25)',
+        ctaArrowColor: '#FFFFFF',
+    },
 };
 
 export const DarkTheme: ITheme = {
-        name: "dark",
-        dark: true,
-        colors: {
-                primary: "#10CEB3",
-                primaryBackground: "#10CEB333",
-                background: "#0A1220",
-                card: "#101D30",
-                border: "#1E2C42",
-                textPrimary: "#F8FAFC",
-                textSecondary: "#94A3B8",
-                placeholder: "#64748B",
-                lightBackground: 'rgba(0,255,200,0.08)',
-                textViewBorder: "#195352",
-                secondary: "#162338",
-                secondaryText: "#F8FAFC",
-                secondaryBackground: '#142E37',
-                success: "#22C55E",
-                warning: "#FBBF24",
-                error: "#FB7185",
-                info: "#10F0CD",
-                white: "#FFFFFF",
-                black: "#000000",
-                grey: "#808080",
-                grayLight: "#D3D3D3",
-                grayDark: "#A9A9A9",
-                interestSelectorBg: '#10CEB3',
-                cancel: '#FB7185',
-                cancelBackground: '#FB718533',
-                chatIcon: '#D9F7F2',
-                hotelIcon: '#FBBF23',
-                hotelIconBackground: '#FBBF2333',
-                danger: '#FF3E76',
-                dangerBackground: '#FF3E7633',
-                star: '#FDBA12',
-        },
+    name: 'dark',
+    dark: true,
+    colors: {
+        // Core Base Colors
+        background: '#050508', // Pitch black
+        secondaryBackground: '#0F0E17',
+        primaryText: '#FFFFFF',
+        secondaryText: '#94A3B8',
+        borderColor: 'rgba(255, 255, 255, 0.10)',
+        blue: '#1877F2',
+
+        // Neon & Accent Colors
+        neonCyan: '#00F2FE',
+        neonSky: '#38BDF8',
+        neonIndigo: '#818CF8',
+        neonPurple: '#A855F7',
+        neonFuchsia: '#D946EF',
+        neonPink: '#FF007A',
+        neonLavender: '#C084FC',
+
+        // Ambient Atmosphere Glows
+        glowTopPurple: 'rgba(121, 40, 202, 0.16)', // Subtle purple neon glow
+        glowCenterCyan: 'rgba(0, 242, 254, 0.08)',
+        glowBottomPink: 'rgba(255, 0, 122, 0.12)',
+        glowCenterAura: 'rgba(139, 92, 246, 0.06)',
+
+        // Badge Colors
+        badgeBackground: 'rgba(168, 85, 247, 0.12)',
+        badgeBorder: 'rgba(168, 85, 247, 0.35)',
+        badgeText: '#D8B4FE',
+
+        // Glassmorphism Card/Pill Colors
+        glassCardBackground: 'rgba(255, 255, 255, 0.04)',
+        glassCardBorder: 'rgba(255, 255, 255, 0.09)',
+        glassCardBorderHighlight: 'rgba(255, 255, 255, 0.16)',
+        pillNativeText: '#64748B',
+        pillCodeBadgeBackground: 'rgba(255, 255, 255, 0.06)',
+        pillCodeText: '#94A3B8',
+
+        // Active Card State Colors
+        activeCardCutout: '#0E0C18',
+        activeCardGlow: '#A855F7',
+        activeBadgeBackground: 'rgba(168, 85, 247, 0.22)',
+        activeBadgeBorder: 'rgba(236, 72, 153, 0.45)',
+        activeBadgeDot: '#00F2FE',
+        activeBadgeText: '#F472B6',
+
+        // Search Bar Colors
+        searchBackground: 'rgba(255, 255, 255, 0.05)',
+        searchBorder: 'rgba(255, 255, 255, 0.10)',
+        searchBorderHighlight: 'rgba(255, 255, 255, 0.18)',
+        searchPlaceholder: 'rgba(148, 163, 184, 0.60)',
+        searchIconColor: '#94A3B8',
+        searchClearBackground: 'rgba(255, 255, 255, 0.15)',
+        searchClearText: '#FFFFFF',
+
+        // CTA Button Colors
+        ctaButtonBackground: '#A855F7',
+        ctaGlowColor: '#EC4899',
+        ctaTextColor: '#FFFFFF',
+        ctaArrowCircleBackground: 'rgba(255, 255, 255, 0.22)',
+        ctaArrowColor: '#FFFFFF',
+    },
 };
 
 export const themes = {
-        light: LightTheme,
-        dark: DarkTheme,
-        automatic: LightTheme,
+    light: LightTheme,
+    dark: DarkTheme,
+    automatic: LightTheme,
 };
 
 export type ThemeKey = keyof typeof themes;

@@ -1,3 +1,4 @@
+// @@iconify-code-gen
 /**
  * @format
  */

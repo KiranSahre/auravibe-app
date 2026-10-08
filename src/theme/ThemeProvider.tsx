@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useMemo } from 'react';
 import { useColorScheme } from 'react-native';
 
-import { themes } from './themes';
-import { ITheme, IThemeColors } from './themeTypes';
+import { themes } from './Themes';
+import { ITheme, IThemeColors } from './ThemeTypes';
 
 const ThemeContext = createContext<ITheme>(themes.light);
 
